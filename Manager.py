@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import multiprocessing
 import os
 from multiprocessing.managers import BaseManager
@@ -26,6 +24,12 @@ class QueueClient:
         manager.connect()
         self.tasks = manager.get_tasks()
         self.results = manager.get_results()
+
+    def getTask(self):
+        return self.tasks
+
+    def getResult(self):
+        return self.results
 
 
 if __name__ == "__main__":
