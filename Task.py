@@ -27,6 +27,8 @@ class Task:
             "size": self.size,
             "a": self.a.tolist(),
             "b": self.b.tolist(),
+            "x": self.x.tolist(),
+            "time": self.time,
         }
         return json.dumps(data)
 
