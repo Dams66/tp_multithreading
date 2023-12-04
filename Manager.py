@@ -2,7 +2,7 @@ import multiprocessing
 import os
 from multiprocessing.managers import BaseManager
 
-PORT = 8000
+PORT = 7482
 KEY = b"AiZa5Uavcoh3PiajvaeTee5z"  # keep it secret, keep it safe !
 
 
