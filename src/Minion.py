@@ -29,7 +29,8 @@ class Minion:
 
     def workOnTask(self):
         print("Start working on :", self.tache.identifier)
-        self.tache.work()
+        time = self.tache.work()
+        print(f"Task finished on :{time} seconds")
         self.result = self.tache.x
 
 

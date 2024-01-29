@@ -16,5 +16,7 @@ class Boss(QueueClient):
 if __name__ == "__main__":
     b = Boss()
     for i in range(NB_TASK):
-        t = Task("T" + str(i))
+        t = Task(
+            "T" + str(i), 2000
+        )  # Enlever la size pour une taille de problème aléatoire
         b.createTask(t)

@@ -20,6 +20,7 @@ class Task:
         start = time.perf_counter()
         self.x = np.linalg.solve(self.a, self.b)
         self.time = time.perf_counter() - start
+        return self.time
 
     def to_json(self) -> str:
         data = {
