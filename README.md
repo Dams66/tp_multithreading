@@ -58,6 +58,11 @@ Assurez-vous d'avoir Python et CMake installés sur votre machine.
 
 L'objectif de la dernière séance de TP à été de comparer les performance de la résolution d'une tâche en Python avec la résolution d'une tâche en C++. Pour évaluer les performances, nous avons mesuré le temps d'exécution de la résolution d'une tâche spécifique avec les deux langages.
 
+- En python : Pour une taille de matrice de _x_, la résolution prend _ secondes
+
+Concernant le C++, j'ai rencontré différents problèmes. Tout d'abord, 
+En mettant en commentaire les lignes, le programme pouvait désormais s'exécuter. J'ai alors ...
+
 ## A propos du PC
 
 Voici les specs de mon pc utilisé pour l'évaluation des performances:
