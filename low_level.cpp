@@ -29,7 +29,7 @@ class Task {
 
   void work() {
     const auto start{std::chrono::steady_clock::now()};
-    x = a.colPivHouseholderQr().solve(b);
+    x = a.lu().solve(b);
     const auto end{std::chrono::steady_clock::now()};
     time = chrono::duration<float>(end - start).count();
     cout << "La tache s est terminee en " << time << " secondes." << endl;
@@ -38,7 +38,7 @@ class Task {
   void from_json(json j) {
     // int x, y, i =0;
     size = j["size"];
-    size = 3000;
+    size = 2000;
     a = Eigen::MatrixXf::Random(size, size);
     b = Eigen::VectorXf::Random(size);
     /*for (x=0; x<j["size"]; x=x+1){

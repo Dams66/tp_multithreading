@@ -56,12 +56,22 @@ Assurez-vous d'avoir Python et CMake installés sur votre machine.
 
 ### Comparaison entre Python et C++
 
-L'objectif de la dernière séance de TP à été de comparer les performance de la résolution d'une tâche en Python avec la résolution d'une tâche en C++. Pour évaluer les performances, nous avons mesuré le temps d'exécution de la résolution d'une tâche spécifique avec les deux langages.
+L'objectif de la dernière séance de TP à été de comparer les performances de la résolution d'une tâche en Python avec la résolution d'une tâche en C++.
 
-- En python : Pour une taille de matrice de _x_, la résolution prend _ secondes
+Pour évaluer les performances, nous avons mesuré le temps d'exécution de la résolution d'une tâche spécifique avec les deux langages.
 
-Concernant le C++, j'ai rencontré différents problèmes. Tout d'abord, 
-En mettant en commentaire les lignes, le programme pouvait désormais s'exécuter. J'ai alors ...
+- En python : Pour une taille de matrice de 2000, la résolution prend (en moyenne calculée sur 10 tâches) 0.25 secondes par tâches.
+
+- En C++, j'ai rencontré différents problèmes.
+
+Tout d'abord, la récupération de la réponse r suite au get sur le localhost ne marchait pas pour moi (en C++). Quand je laissais la ligne correspondante, mon code compilait mais ne s'exécutais pas (nous avions cherché ensemble lors de la dernière séance la cause du problème mais sans succès). J'ai alors cherché un moyen de contourner le problème en passant une fausse donnée json créée de toute pièce (sans passer par la lecture du localhost pour récupérer le json).
+Dans mon code je crée une matrice de taille 5 random que je passe à la tâche. Cependant, je ne l'utilise pas par la suite car j'ai codé en dur le fait que la description du json me renvoie des matrices randoms a et b de taille 2000 (taille fixée pour les tests).
+
+Avec le solver colPivHouseholderQr et une taille de matrice de 2000, la résolution de mon problème prend 22.8486 secondes
+
+Avec le solver lu et une taille de matrice de 2000, la résolution de mon problème prend 10.4782 secondes
+
+Comme on peut le voir, ces temps-ci sont anormalement élevés et sont je pense représentatif d'une mauvaise utilisation de l'hardware. En toute fin de séance, nous avions parlé de l'ajout d'une ligne dans le CMakeList qui autorisais une utilisation GPU ?? Je n'ai pas eu le temps d'implémenter cette solution.
 
 ## A propos du PC
 
@@ -79,4 +89,4 @@ Voici les specs de mon pc utilisé pour l'évaluation des performances:
 
 - Soubirant Damien (https://github.com/Dams66)
 
---- 
+---
