@@ -54,6 +54,21 @@ Assurez-vous d'avoir Python et CMake installés sur votre machine.
     ```
 ## Performances
 
+### Comparaison entre Python et C++
+
+L'objectif de la dernière séance de TP à été de comparer les performance de la résolution d'une tâche en Python avec la résolution d'une tâche en C++. Pour évaluer les performances, nous avons mesuré le temps d'exécution de la résolution d'une tâche spécifique avec les deux langages.
+
+## A propos du PC
+
+Voici les specs de mon pc utilisé pour l'évaluation des performances:
+
+- CPU: Intel Core i9-13980HX 2.2 - 5.6 GHz 24 coeurs
+
+- RAM: 32 Go DDR5 4800MHz
+
+- GPU: NVIDIA GeForce RTX 4070
+
+- OS: Windows 11
 
 ## Auteurs
 
