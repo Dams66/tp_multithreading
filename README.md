@@ -71,7 +71,7 @@ Avec le solver colPivHouseholderQr et une taille de matrice de 2000, la résolut
 
 Avec le solver lu et une taille de matrice de 2000, la résolution de mon problème prend 10.4782 secondes
 
-Comme on peut le voir, ces temps-ci sont anormalement élevés et sont je pense représentatif d'une mauvaise utilisation de l'hardware. En toute fin de séance, nous avions parlé de l'ajout d'une ligne dans le CMakeList qui autorisais une utilisation GPU ?? Je n'ai pas eu le temps d'implémenter cette solution.
+Comme on peut le voir, ces temps-ci sont anormalement élevés et sont je pense représentatif d'une mauvaise utilisation de l'hardware. En toute fin de séance, nous avions parlé de l'ajout d'une ligne dans le CMakeList qui autorisais une accélération matérielle ?? Je n'ai pas eu le temps d'implémenter cette solution.
 
 ## A propos du PC
 
